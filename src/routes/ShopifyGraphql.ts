@@ -41,7 +41,7 @@ router.get('/', async (req: Request, res: Response) => {
       return result.json();
     })
     .then((data: any) => {
-      console.log("data returned:\n", data.data.products.edges);
+      console.log("data returned:\n", data.data);
       res.send(data);
     });
 });
